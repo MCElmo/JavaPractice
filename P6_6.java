@@ -3,7 +3,7 @@ public class P6_6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(sentenceReverse("Btodaym j".toCharArray()));
+		System.out.println(sentenceReverse("a good   example".toCharArray()));
 	}
 	
 	 
@@ -14,7 +14,8 @@ public class P6_6 {
 		String result = "";
 		for(String str : split)
 		{
-			result = str + " " + result;
+			if(!(str.trim().equals("")))
+				    result = str + " " + result;
 		}
 		return result.substring(0,result.length() -1);
 	}
